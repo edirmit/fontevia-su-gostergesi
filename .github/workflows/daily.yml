@@ -1,1 +1,128 @@
+name: ASKİ Günlük Veri Toplama
 
+on:
+  # Her gün saat 07:00 İstanbul (04:00 UTC)
+  schedule:
+    - cron: "0 4 * * *"
+
+  # Manuel tetikleme (GitHub UI'dan test için)
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Hedef tarih (YYYY-MM-DD, boş = bugün)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Dry-run (CSV'ye yazmadan test)"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────
+  # JOB 1: Günlük veri toplama
+  # ─────────────────────────────────────────────────────────────────────────
+  collect:
+    name: ASKİ Veri Çek
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # CSV commit için
+
+    steps:
+      - name: Repo checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları yükle
+        run: pip install -r requirements.txt
+
+      - name: Klasörleri oluştur
+        run: mkdir -p data/archive
+
+      - name: ASKİ verisini çek
+        env:
+          TARGET_DATE: ${{ github.event.inputs.date }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          ARGS=""
+          if [ -n "$TARGET_DATE" ]; then
+            ARGS="--date $TARGET_DATE"
+          fi
+          if [ "$DRY_RUN" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python aski_scraper.py $ARGS
+
+      - name: CSV ve arşivi commit et
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Değişiklik varsa commit et
+          git add data/aski_ankara_daily.csv data/archive/ || true
+          if git diff --staged --quiet; then
+            echo "Yeni veri yok, commit atlanıyor."
+          else
+            DATE_STR=$(date +%Y-%m-%d)
+            git commit -m "data: ASKİ günlük veri ${DATE_STR} [bot]"
+            git push
+          fi
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # JOB 2: Haftalık analiz (her Pazartesi 08:00 İstanbul = 05:00 UTC)
+  # ─────────────────────────────────────────────────────────────────────────
+  analyze:
+    name: Haftalık Analiz & Grafik
+    runs-on: ubuntu-latest
+    # Sadece Pazartesi çalışsın (cron 0 4 * * 1), ya da manuel tetiklensin
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule' && startsWith(github.event.schedule, '0 4 * * 1'))
+    needs: collect
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repo checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Tüm geçmiş (commit sonrası güncel)
+          ref: main
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları yükle
+        run: pip install -r requirements.txt
+
+      - name: Analiz çalıştır
+        run: python analyze.py --days 90
+
+      - name: Grafikleri artifact olarak sakla
+        uses: actions/upload-artifact@v4
+        with:
+          name: ankara-su-grafikleri-${{ github.run_id }}
+          path: output/
+          retention-days: 30
+
+      - name: Grafikleri ve özeti commit et
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/ || true
+          if git diff --staged --quiet; then
+            echo "Yeni grafik yok."
+          else
+            WEEK=$(date +%Y-W%V)
+            git commit -m "analysis: 90 günlük grafik seti ${WEEK} [bot]"
+            git push
+          fi
