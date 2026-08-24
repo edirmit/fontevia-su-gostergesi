@@ -82,9 +82,7 @@ jobs:
     name: Haftalık Analiz & Grafik
     runs-on: ubuntu-latest
     # Sadece Pazartesi çalışsın (cron 0 4 * * 1), ya da manuel tetiklensin
-    if: |
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'schedule' && startsWith(github.event.schedule, '0 4 * * 1'))
+    if: github.event_name == 'schedule'
     needs: collect
     permissions:
       contents: write
