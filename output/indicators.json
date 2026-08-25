@@ -1,0 +1,15 @@
+{
+  "tarih": "2026-08-25",
+  "veri_gunu": 2,
+  "aktif_rezerv_m3": null,
+  "aktif_rezerv_milyon_m3": null,
+  "delta_90_m3": null,
+  "delta_90_milyon_m3": null,
+  "q_in_90_m3": null,
+  "q_city_90_m3": null,
+  "r90": null,
+  "teorik_gun": null,
+  "yillik_fark_m3": null,
+  "yillik_fark_milyon_m3": null,
+  "gecen_yil_aktif_su_m3": null
+}
