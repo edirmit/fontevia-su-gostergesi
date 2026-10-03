@@ -1,0 +1,1090 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" href="&lt;%= ResolveClientUrl(&quot;../assets/vendor/font-awesome/css/fontawesome-all.min.css&quot;)%>" /><title>
+	Ankara Baraj Doluluk Oranları
+</title><link rel="stylesheet" href="../assets/vendor/animate/animate.min.css" /><link rel="stylesheet" href="&lt;%= ResolveClientUrl(&quot;../assets/assets/vendor/magnific-popup/magnific-popup.min.css&quot;)%>" /></head>
+<body>
+    <form method="post" action="./Baraj.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5017CE33" />
+</div>
+        <div class="body">
+            <div role="main" class="main">
+                
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<!-- Web Fonts  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href='../assets/vendor/bootstrap/css/bootstrap.min.css' />
+<link rel="stylesheet" href='../assets/vendor/font-awesome/css/font-awesome.min.css' />
+<link rel="stylesheet" href='../assets/vendor/font-awesome/css/fontawesome-all.min.css' />
+
+<link rel="stylesheet" href='../assets/vendor/animate/animate.min.css' />
+
+<link rel="stylesheet" href='../assets/vendor/simple-line-icons/css/simple-line-icons.min.css' />
+<link rel="stylesheet" href='../assets/vendor/owl.carousel/assets/owl.carousel.min.css' />
+<link rel="stylesheet" href='../assets/vendor/owl.carousel/assets/owl.theme.default.min.css' />
+<link rel="stylesheet" href='../assets/vendor/magnific-popup/magnific-popup.min.css' />
+<!-- Theme CSS -->
+<link rel="stylesheet" href='../assets/css/theme.css' />
+<link rel="stylesheet" href='../assets/css/theme-elements.css' />
+<link rel="stylesheet" href='../assets/css/theme-blog.css' />
+<link rel="stylesheet" href='../assets/css/theme-shop.css' />
+<!-- Current Page CSS -->
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/settings.css' />
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/layers.css' />
+<link rel="stylesheet" href='../assets/vendor/rs-plugin/css/navigation.css' />
+<!-- Demo CSS -->
+<link rel="stylesheet" href='../assets/css/demos/demo-medical.css' />
+<!-- Skin CSS -->
+<link rel="stylesheet" href='../assets/css/skins/skin-medical.css' />
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href='../assets/css/custom.css' />
+<!-- Head Libs -->
+<script src='../assets/vendor/modernizr/modernizr.min.js'></script>
+
+
+
+
+<!-- Skin CSS -->
+<header id="header" class="header-narrow" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 40, 'stickySetTop': '-100px', 'stickyChangeLogo': false}">
+    <div class="header-body">
+        <div class="header-top header-top header-top-style-3 header-top-custom">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-column justify-content-end">
+                        <div class="header-row">
+                            <div class="header-column justify-content-start">
+                                <div class="header-row">
+                                
+                                    <a href="/tr/Anasayfa">
+                                        <img alt="Aski Genel Müdürlüğü" width="192" height="auto" src='../Yukle/Resim/Icerik/logo-aski.png' />
+                                    </a>
+
+
+
+
+                                </div>
+                            </div>
+                            <nav class="header-nav-top float-right">
+                                <ul class="nav nav-pills">
+
+                                    <li class="nav nav-pills">
+                                       
+                                        <img src="/tr/images/ataturkweb.png" />
+
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                    <div id="IncBanner_MenuBar1">
+	<nav class='collapse'><ul class='nav nav-pills' id='mainNav'><li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link'  href='http://www.aski.gov.tr/'>ANASAYFA</a></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>KURUMSAL</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Belediye-Baskani/17>Belediye Başkanı</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Genel-Mudur/18>Genel Müdür</a></li><li><a class='dropdown-item' target=_self href=/tr/TeskilatSemasi.aspx>Teşkilat Şeması</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Misyon-Vizyonumuz/20>Misyon & Vizyonumuz</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Etik-Komisyonu/114>Etik Komisyonu</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Aski-Hakkinda/19>Aski Hakkında</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Stratejik-Planlar/21>Stratejik Planlar</a></li><li><a class='dropdown-item' target=_self href=/tr/mecliskararlari.aspx>Belediye Meclis Kararları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Mevzuat/78>Mevzuat</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Mali-Durum-Raporu/64>Mali Durum Raporu</a></li><li><a class='dropdown-item' target=_blank href=\Yukle\Dosya\sertifikalar\NewIBNET_SErtifika.pdf>NewIBNET Üyelik Sertifikası</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Performans-Programlari/23>Performans Programları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Ebc-Mukayeseli-Degerlendirmebenchmarking-Calismasi/115>EBC Mukayeseli Değerlendirme(Benchmarking) Çalışması</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Faaliyet-Raporlari/26>Faaliyet Raporları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Teknik-Sartnameler/111>Teknik Şartnameler</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Hizmet-Standartlari/113>Hizmet Standartları</a></li><li><a class='dropdown-item' target=_blank href=http://yayinlar.aski.gov.tr/>Yayınlarımız</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>ANKARA VE SU</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Atiksu-Aritma/30>Atıksu Arıtma</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Icme-Suyu-Aritma/31>İçme Suyu Arıtma</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Su-Kaynaklarimiz/32>Su Kaynaklarımız</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Laboratuvar-Hizmetleri/28>Laboratuvar Hizmetleri
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Su-Kalitemiz/29>Su Kalitemiz
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Yapi-Kalite-Kontrol-Laboratuvari/40>Yapı Kalite Kontrol Laboratuvarı</a></li><li><a class='dropdown-item' target=_blank href=http://www.aski.gov.tr/TR/SuAnalizSonuclari.aspx>Su Analiz Sonuçları</a></li><li><a class='dropdown-item' target=_blank href=http://www.aski.gov.tr/yukle/dosya/SuKaliteNoktalari.pdf>Su Kalite Noktalarımız</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>ABONELİK HİZMETLERİ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Islemleri-Gerekli-Evraklar/37>Abonelik İşlemleri (Gerekli Evraklar)</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Sikca-Sorulan-Sorular/36>Abonelik Sıkça Sorulan Sorular
+</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Abonelik-Rehberi/34>Abonelik Rehberi
+</a></li><li><a class='dropdown-item' target=_self href=/tr/ucretler.aspx>Tarife ve Ücretler</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>KARTLI SAYAÇ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Sikca-Sorulan-Sorular/59>Sıkça Sorulan Sorular</a></li><li><a class='dropdown-item' target=_self href=http://www.aski.gov.tr/tr/KioksNoktalar.aspx>Su matik Ödeme Noktaları</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Kartli-Sayac-Nedir/44>Kartlı Sayaç Nedir?
+</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>TEKNOLOJİMİZ</a><ul class='dropdown-menu'><li><a class='dropdown-item' href=/TR/ICERIK/Ankabıs/38>ANKABİS</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Scada/39>SCADA</a></li><li><a class='dropdown-item' href=/TR/ICERIK/Sebeke-Bilgi-Merkezi/41>Şebeke Bilgi Merkezi</a></li></ul></li> <li class='dropdown dropdown-full-color dropdown-secondary'> <a class='nav-link dropdown-toggle' target='' href=#>İLETİŞİM</a><ul class='dropdown-menu'><li><a class='dropdown-item' target=_self href=/tr/iletisim.aspx>Genel Müdürlük</a></li><li><a class='dropdown-item' target=_self href=/tr/iletisimDetay.aspx?ID=11>Bölge Müdürlükleri</a></li></ul></li><li style='background-color:#d1ea7c;'><a class='nav-link' target='_blank' href='https://onlineislem.aski.gov.tr'>ONLİNE İŞLEMLER</a></li></ul></nav>
+</div>
+                </div>
+                <a href="#" class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav"><i class="fa fa-bars"></i></a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+                <section class="page-header page-header-color page-header-tertiary page-header-more-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="breadcrumb">
+                                    <li><a href="/TR/Default.aspx">Anasayfa</a></li>
+                                    <li class="active">Baraj Doluluk Oranları</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1>
+                                    <span id="LblMenuBaslik">Ankara Baraj Doluluk Oranları</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col" style="text-align: center">
+                                    <h2 class="word-rotator-title">BARAJLAR BİLGİ SİSTEMİ <strong>
+                                        <br />
+                                        <span class="word-rotator" data-plugin-options="{'delay': 3000}">
+                                            <span class="word-rotator-items">
+                                                <span>ANKARA BARAj DOLULUK ORANLARI</span>
+                                            </span>
+                                        </span>
+                                    </strong>
+                                    </h2>
+                                    
+                                    <hr class="tall">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="circular-bar">
+                                                <div id="BarajOrani1" class="circular-bar-chart"
+                                                    data-percent="42.55"
+                                                    data-plugin-options="{'size': 275, 'lineWidth': 15, 'lineCap': 'square', 'scaleColor': false, 'barColor': '#0088CC'}">
+                                                    <strong>Toplam 
+              <br />
+                                                        Doluluk Oranı</strong><br />
+                                                    <br />
+                                                    <label style="font-size: x-large; color: darkred; font-weight: 700" id="LabelBarajOrani1">0</label>
+                                                </div>
+                                            </div>
+
+                                            <br />
+
+                                            <div class="circular-bar">
+                                                <div id="BarajOrani" class="circular-bar-chart"
+                                                    data-percent="35.87"
+                                                    data-plugin-options="{'size': 275, 'lineWidth': 15, 'lineCap': 'square', 'scaleColor': false, 'barColor': '#0088CC'}">
+                                                    <strong>Aktif 
+                <br />
+                                                        Doluluk Oranı</strong><br />
+                                                    <br />
+                                                    <label style="font-size: x-large; color: darkred; font-weight: 700" id="LabelBarajOrani">0%</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="1">Barajların Toplam Hacmi (m3) :</th>
+                                                        <th colspan="2" style="font-size: x-large">
+                                                            <span id="LblHacim">1.454.666.000</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Tarih:</th>
+                                                        <th>
+                                                            <span id="lblTarih1">2.10.2025</span></th>
+                                                        <th>
+                                                            <span id="lblTarih2">2.10.2026</span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Barajlarımızdaki Su Miktarı : </td>
+                                                        <td>
+                                                            <span id="LblSuMiktari1">253.725.000 m3</span></td>
+                                                        <td>
+                                                            <span id="LblSuMiktari2">554.296.000 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>İvedik Su Arıtma Tesisinden Verilen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="LblIvedik1">1.179.921 m3</span></td>
+                                                        <td>
+                                                            <span id="LblIvedik2">1.308.993 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>- Çamlıdere Barajından Çekilen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="Label1"></span></td>
+                                                        <td>
+                                                            <span id="LblCamlidere2">799.503 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>- Kurtboğazı Barajından Çekilen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="Label3"></span></td>
+                                                        <td>
+                                                            <span id="LblKurtBogazi2">200.436 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>- Kesikköprü Barajından Çekilen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="Label5"></span></td>
+                                                        <td>
+                                                            <span id="LblKesikopru2">309.054 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pursaklar Su Arıtma Tesisinden Verilen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="LblPursak1">39.856 m3</span></td>
+                                                        <td>
+                                                            <span id="LblPursak2">48.824 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Çubuk Su Arıtma Tesisinden Verilen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="LblCubuk1">51.700 m3</span></td>
+                                                        <td>
+                                                            <span id="LblCubuk2">42.700 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Şehre Verilen Toplam Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="LblSehreVerilen1">1.341.645 m3</span></td>
+                                                        <td>
+                                                            <span id="LblSehreVerilen2">1.444.767 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Barajlara Gelen Su Miktarı :</td>
+                                                        <td>
+                                                            <span id="LblBarajGelen1">147.598 m3</span></td>
+                                                        <td>
+                                                            <span id="LblBarajGelen2">300.613 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Toplam Doluluk Yüzdesi :</td>
+                                                        <td>
+                                                            <span id="LblYuzde1">% 17,44</span></td>
+                                                        <td>
+                                                            <span id="LblYuzde2"> % 38,10</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aktif Kullanılabilir Su Miktarı:</td>
+                                                        <td>
+                                                            <span id="AktifMiktar1">64.768.000 m3</span></td>
+                                                        <td style="font-weight: 600; color: red">
+                                                            <span id="AktifMiktar2">402.589.000 m3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aktif Kullanılabilir Su Yüzdesi:</td>
+                                                        <td style="font-weight: 600; color: red">
+                                                            <span id="AktifYuzde1">% 4,97</span></td>
+                                                        <td style="font-weight: 600; color: red">
+                                                            <span id="AktifYuzde2">% 30,90</span></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            
+                                            
+                                            
+                                        <div style="color:red" >* Son Batımetrik Verilere Göre 01.02.2026 Tarihinde Güncellenmiştir.</div>
+                                        </div>
+                                    </div>
+                                    <hr class="tall">
+                                    <div class="row portfolio-list lightbox m-0" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
+                                        
+                                        
+
+                                        
+                                        
+                                        
+                                        
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <h5>Yıllara Göre Barajlara Gelen Su Miktarı</h5>
+                                            <div class="portfolio-item">
+                                                <span class="thumb-info thumb-info-lighten thumb-info-centered-icons">
+                                                    <span class="thumb-info-wrapper">
+                                                        <img src="images/aski_grafik.png" class="img-fluid" alt="11" />
+                                                        <span class="thumb-info-action">
+                                                            <a href="images/aski_grafik.png" class="lightbox-portfolio">
+                                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <h5>1992-2000 Yılları Arası</h5>
+                                            <div class="portfolio-item">
+                                                <span class="thumb-info thumb-info-lighten thumb-info-centered-icons">
+                                                    <span class="thumb-info-wrapper">
+                                                        <img src="Brj_graf_image/7.jpg" class="img-fluid" alt="11" />
+                                                        <span class="thumb-info-action">
+                                                            <a href="Brj_graf_image/7.jpg" class="lightbox-portfolio">
+                                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <h5>2000 Yılı Sonrası</h5>
+                                            <div class="portfolio-item">
+                                                <span class="thumb-info thumb-info-lighten thumb-info-centered-icons">
+                                                    <span class="thumb-info-wrapper">
+                                                        <img src="images/AylikBarajListesi.jpg" class="img-fluid" alt="11" />
+                                                        <span class="thumb-info-action">
+                                                            <a href="images/AylikBarajListesi.jpg" class="lightbox-portfolio">
+                                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <hr />
+                                        <div class="col-6 col-sm-6 col-lg-6">
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <h5 style="text-align: center; color: red">
+                                                <span id="LblGecenYil">2025</span>
+                                                YILI<br />
+                                                Aylık Barajlara Gelen Su Miktarı</h5>
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Dönem</th>
+                                                        <th></th>
+                                                        <th>Su Miktarı</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                            <tr>
+                                                                <td>
+                                                                    Ocak-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>23.485.595</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Şubat-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>15.901.776</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Mart-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>24.446.143</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Nisan-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>38.344.766</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Mayıs-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>34.821.344</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Haziran-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>5.653.167</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Temmuz-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>4.046.432</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Ağustos-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>3.730.148</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Eylül-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>5.225.594</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Ekim-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>8.847.145</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Kasım-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>7.847.803</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Aralık-2025
+                                                                </td>
+                                                                <td>
+                                                                    <td>9.403.288</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-lg-6">
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <h5 style="text-align: center; color: red">
+                                                <span id="lblbuyil">2026</span>
+                                                YILI
+                                                <br />
+                                                Aylık Barajlara Gelen Su Miktarı</h5>
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Dönem</th>
+                                                        <th></th>
+                                                        <th>Su Miktarı</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                            <tr>
+                                                                <td>
+                                                                    Ocak-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>55.762.949</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Şubat-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>236.236.797</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Mart-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>113.051.740</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Nisan-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>159.902.957</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Mayıs-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>134.056.051</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Haziran-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>37.648.408</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Temmuz-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>6.617.138</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Ağustos-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>5.150.857</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Eylül-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>6.295.421</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>
+                                                                    Ekim-2026
+                                                                </td>
+                                                                <td>
+                                                                    <td>572.711</td>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <hr />
+
+                                        <div class="col-12 col-sm-12 col-lg-12">
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <div class="testimonial testimonial-primary">
+                                                <blockquote>
+                                                    <h2 style="text-align: center; color: white">Barajlar Genel Durumu</h2>
+                                                </blockquote>
+                                                <div class="testimonial-arrow-down"></div>
+                                            </div>
+                                            <h5 style="text-align: center; color: red"></h5>
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th><b>Baraj Adı</b></th>
+                                                        <th><b>Toplam Hacim (M3)</b></th>
+
+                                                        <th><b>SU Miktarı (M3)</b></th>
+                                                        <th><b>SU Yüzdesi (%)</b></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                            <tr>
+                                                                <td>Akyar Barajı --> Eğrekkaya Barajına Aktarım</td>
+                                                                <td>52.445.000</td>
+
+                                                                <td>24.085.000</td>
+                                                                <td>45,92</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Çamlıdere Barajı --> İvedik Arıtma Tesisine Aktarım</td>
+                                                                <td>1.108.276.000</td>
+
+                                                                <td>382.320.000</td>
+                                                                <td>34,50</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Çubuk 2 Barajı --> Pursaklar ve Çubuk Arıtma Tesisine Aktarım</td>
+                                                                <td>22,961,000</td>
+
+                                                                <td>12.151.000</td>
+                                                                <td>52,92</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Eğrekkaya Barajı --> Kurtboğazı Barajına Aktarım</td>
+                                                                <td>93.452.000</td>
+
+                                                                <td>56.294.000</td>
+                                                                <td>60,24</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Kargalı Barajı --> Elmadağ Aritma Tesisine Aktarım</td>
+                                                                <td>542.000</td>
+
+                                                                <td>62.000</td>
+                                                                <td>11,44</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Kavşakkaya Barajı --> Çubuk ve Kurtboğazı Barajına Aktarım</td>
+                                                                <td>85.228.000</td>
+
+                                                                <td>37.120.000</td>
+                                                                <td>43,55</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Kesikköprü Baraj --> İvedik Arıtma Tesisine Aktarım</td>
+                                                                <td>95.000.000</td>
+
+                                                                <td>95.000.000</td>
+                                                                <td>100</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Kurtboğazı Barajı --> İvedik Arıtma Tesisine Aktarım</td>
+                                                                <td>91.762.000</td>
+
+                                                                <td>42.264.000</td>
+                                                                <td>46,06</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Peçenek Barajı --> ŞerefliKoçhisar Arıtma Tesisine Aktarım</td>
+                                                                <td>59.525.000</td>
+
+                                                                <td>16.224.000</td>
+                                                                <td>27.26</td>
+                                                            </tr>
+                                                        
+                                                            <tr>
+                                                                <td>Türkşerefli Barajı --> Temelli Arıtma Tesisine Aktarım</td>
+                                                                <td>5.668.500</td>
+
+                                                                <td>575.000</td>
+                                                                <td>10,14</td>
+                                                            </tr>
+                                                        
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="testimonial testimonial-primary">
+                                        <blockquote>
+                                            <h2 style="text-align: center; color: white">Sıkça Sorulan Sorular</strong></h2>
+                                        </blockquote>
+                                        <div class="testimonial-arrow-down"></div>
+                                    </div>
+                                    <div class="toggle toggle-primary" data-plugin-toggle="" data-plugin-options="{ 'isAccordion': true }">
+                                        <section class="toggle active">
+                                            <label>1) Gerede Suyu nedir? </label>
+                                            <div class="toggle-content" style="display: block;">
+                                                <p>Cevap: Bolu Gerede İlçesi Ulusu çayından Çamlıdere Barajımıza yaklaşık 32 km tünel ve çevirme yapısıyla aktarılan suyu ifade eder. 2020 yılında su alınmaya başlanmıştır. </p>
+                                            </div>
+                                        </section>
+
+                                        <section class="toggle">
+                                            <label>2) İstanbul, İzmir, Bursa baraj doluluk oranları %40 ve üzeri iken Ankara'da neden %15 civarıdır? </label>
+                                            <div class="toggle-content">
+                                                <p>
+                                                Cevap: Barajlarımızın toplam kapasitesi yıllık ihtiyacımızın yaklaşık 3 katıdır. Bunun nedeni büyük oranda kar yağışına bağlı olarak doluluk sağlanmasıdır. Yağışlı dönemde depolanan fazla suyun sonraki yıllarda kullanılması hedeflenmiştir. Diğer büyük şehirlerde toplam kapasite oranları yıllık ihtiyaçlara yakındır. 
+                                            </div>
+                                        </section>
+
+                                        <section class="toggle">
+                                            <label>3) Yağmur yağdığı halde Baraj doluluk oranları neden artmıyor? </label>
+                                            <div class="toggle-content">
+                                                <p>Cevap: Baraj Doluluk Oranları; Baraj kapasitelerimizin yüksek olması nedeniyle yılın ilk aylarında doluluk oranı yavaş artar. Ancak havaların ısınması ve kar erimeleriyle birlikte özellikle Nisan ve Mayıs aylarında yüksek oranda artış sağlanır. </p>
+                                            </div>
+                                        </section>
+
+                                        <section class="toggle">
+                                            <label>4) Baraj aktif doluluk oranı nedir, nasıl hesaplanmaktadır? </label>
+                                            <div class="toggle-content">
+                                                <p>Cevap: Barajlarda minimum su seviyesi su alma yapısı kotu olarak tanımlanmaktadır. Bu kotun altındaki hacim baraj işletme ömrü boyunca havzadan gelen sürüntü malzeme için ayrılmış olup bu hacme ölü hacim denir. Aktif hacim ise mininum su kotu ile normal su kotu (Suyun alınabileceği en üst kot) arasında kalan hacmi ifade eder. Ölü hacim baraj işletmesi boyunca azaldığından ve bu kottan su alınması için ayrı bir pompaj sistemi kurulması gerektiğinden işletme faaliyetleri aktif hacme göre planlanır. İlgili bakanlıkça da doluluk oranı aktif hacme göre açıklanmaktadır. Baraj Toplam doluluk miktarı – ölü hacim miktarı =Aktif Doluluk miktarı Aktif mevcut kullanılabilir su miktarı / Aktif kullanılabilen toplam su miktarı = Aktif Doluluk oranı</p>
+                                            </div>
+                                        </section>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<style>
+
+    .blogCookieCover {
+    width: 100%;
+    max-height:90px;
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    clear: both;
+    height: auto;
+    min-height: 85px;
+    background-color: #87a2bd;
+    color: #fff;
+    z-index: 999999;
+    display: none;
+}
+
+
+.blogCookiesubCover {
+    text-align: left;
+    width: 100%;
+    max-width: 1114px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+.blogCookieText {
+    float: left;
+    text-align: left;
+    width: 90%;
+    padding-left: 10px;
+    margin: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+.blogCookieBtnCover {
+    float: right;
+    width: 8%;
+    /*min-width: 175px;*/
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 43px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.blogCookieBtn {
+    float: left;
+    width: 80%;
+    min-width: 140px;
+    margin: auto;
+    height: 36px;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #001e3c;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 37px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.blogCookieCls {
+    margin-right: 30px;
+    float: right;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.bCookiePolicyLink {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+</style>
+<footer id="footer" class="m-0">
+    <div class="container">
+        <div class="row">
+            <div class="footer-ribbon">
+                <span><a style="color: white" href="/TR/SiteHaritasi.aspx">Site Haritası</a></span>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-details">
+                    <h4>İletişim</h4>
+                    <ul class="contact">
+                        <li>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i><strong>Adres:</strong>Hacı Bayram Mahallesi Kazım Karabekir Caddesi<br />
+                                No:70 06050 ALTINDAĞ/ANKARA
+                            </p>
+                        </li>
+                       
+                        <li>
+                            <p><i class="fas fa-phone"></i><strong>ASKİ Çağrı Merkezi:</strong><a href="tel:153"> 153</a></p>
+                        </li>
+
+                        <li>
+                            <p><i class="far fa-envelope"></i><strong>Email:</strong> <a href="mailto: bilgiedinme@aski.gov.tr">bilgiedinme@aski.gov.tr</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="mb-4">Genel Müdürlük Çalışma Saatleri</h4>
+                <div class="info custom-info">
+                    <span>Pzt-Cum</span>
+                    <span>08:00-12:00 / 13:00-17:00</span>
+                </div>
+               
+
+            </div>
+
+            <div class="col-lg-2 ml-lg-auto">
+                <h4 class="mb-4">Sosyal Medya</h4>
+                <ul class="social-icons">
+                    <li class="social-icons-facebook">
+                        <a href="https://tr-tr.facebook.com/askigenelmudurlugu/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-twitter">
+                        <a href="https://twitter.com/askiankara" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-instagram">
+                        <a href="https://www.instagram.com/askibaskentankara/" target="_blank" title="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-icons-youtube">
+                        <a href="https://www.youtube.com/user/askigenelmudurlugu" target="_blank" title="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-2 ml-lg-auto">
+                <h4 class="mb-4">Uygulamalarımız</h4>
+                <div class="info custom-info">
+                    <a href="https://play.google.com/store/apps/details?id=org.uygulama.aski" target="_blank">
+                        <img src="/TR/images/PlayStoreIcon.png" style="max-width: 150px" /></a>
+                </div>
+                <div class="info custom-info">
+                    <a href="https://itunes.apple.com/us/app/aski-ankara/id1109913912?mt=8" target="_blank">
+                        <img src="/TR/images/AppStoreIcon.png" style="max-width: 150px" /></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center m-0">
+                    <p>© Aski Genel Müdürlüğü - Bilgi İşlem Dairesi Başkanlığı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15596961-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-15596961-1');
+</script>
+
+        
+<!-- Vendor -->
+<script src='../assets/vendor/jquery/jquery.min.js'></script>
+<script src='../assets/vendor/jquery.appear/jquery.appear.min.js'></script>
+<script src='../assets/vendor/jquery.easing/jquery.easing.min.js'></script>
+<script src='../assets/vendor/jquery-cookie/jquery-cookie.min.js'></script>
+<script src='../assets/vendor/popper/umd/popper.min.js'></script>
+<script src='../assets/vendor/bootstrap/js/bootstrap.min.js'></script>
+<script src='../assets/vendor/common/common.min.js'></script>
+
+<script src='../assets/vendor/jquery.validation/jquery.validation.min.js'></script>
+<script src='../assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js'></script>
+<script src='../assets/vendor/jquery.gmap/jquery.gmap.min.js'></script>
+<script src='../assets/vendor/jquery.lazyload/jquery.lazyload.min.js'></script>
+<script src='../assets/vendor/isotope/jquery.isotope.min.js'></script>
+<script src='../assets/vendor/owl.carousel/owl.carousel.min.js'></script>
+<script src='../assets/vendor/magnific-popup/jquery.magnific-popup.min.js'></script>
+<script src='../assets/vendor/vide/vide.min.js'></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src='../assets/js/theme.js'></script>
+
+<!-- Current Page Vendor and Views -->
+<script src='../assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js'></script>
+<script src='../assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
+
+<!-- Current Page Vendor and Views -->
+<script src='../assets/js/views/view.contact.js'></script>
+
+<!-- Demo -->
+<script src='../assets/js/demos/demo-medical.js'></script>
+
+<!-- Theme Custom -->
+<script src='../assets/js/custom.js'></script>
+
+<!-- Theme Initialization Files -->
+<script src='../assets/js/theme.init.js'></script>
+
+   
+
+
+        <!--begin::Page Vendors -->
+        <script src="JS/Armchart/amcharts.js"></script>
+        <script src="JS/Armchart/serial.js"></script>
+        <script src="JS/Armchart/radar.js"></script>
+        <script src="JS/Armchart/pie.js"></script>
+        <!--end::Page Vendors -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                FncGetir();
+                // FncGetir1();
+            });
+            //count değerleri
+            function initCircularCharts() {
+                $('.circular-bar-chart').each(function () {
+                    var $this = $(this);
+                    var options = $this.data('plugin-options');
+
+                    // data-plugin-options string geliyorsa parse et
+                    if (typeof options === 'string') {
+                        try { options = JSON.parse(options.replace(/'/g, '"')); } catch (e) { options = {}; }
+                    }
+
+                    if (!$this.data('easyPieChart')) {
+                        $this.easyPieChart(options || {});
+                    }
+                });
+            }
+
+            function updateCircularChart(chartSelector, percent) {
+                percent = parseFloat(percent);
+                if (isNaN(percent)) percent = 0;
+
+                // yüzde 0-100 aralığı güvenliği
+                percent = Math.max(0, Math.min(100, percent));
+
+                var $el = $(chartSelector);
+                var chart = $el.data('easyPieChart');
+
+                // chart yoksa init et
+                if (!chart) {
+                    initCircularCharts();
+                    chart = $el.data('easyPieChart');
+                }
+
+                // data-percent ve chart update
+                $el.attr('data-percent', percent.toFixed(2));
+                if (chart && typeof chart.update === 'function') {
+                    chart.update(percent);
+                }
+            }
+
+            function FncGetir() {
+                $.ajax({
+                    url: "Default.aspx/Counter1",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    data: "{}",
+                    success: function (resp) {
+                        // Eğer WebMethod object dönerse: resp.d direkt object olur
+                        // Eğer string JSON döndürüyorsan: JSON.parse(resp.d)
+                        var result = resp.d;
+                        if (typeof result === "string") result = JSON.parse(result);
+
+                        if (result.success === true) {
+                            updateCircularChart('#BarajOrani', result.BarajDegeri);
+                            updateCircularChart('#BarajOrani1', result.SonucSu);
+
+                            $('#LabelBarajOrani').text(' %' + parseFloat(result.BarajDegeri).toFixed(2));
+                            $('#LabelBarajOrani1').text(' %' + parseFloat(result.SonucSu).toFixed(2));
+                        } else {
+                            swal({ html: true, title: "İşleminiz Gerçekleşmedi..!", text: result.sonuc, type: "error" });
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert(errorThrown + " " + textStatus);
+                    }
+                });
+            }
+
+            $(function () {
+                initCircularCharts();
+                FncGetir();
+
+                // istersen periyodik güncelle:
+                // setInterval(FncGetir, 60000);
+            });
+
+        </script>
+    </form>
+</body>
+</html>
